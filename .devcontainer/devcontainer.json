@@ -3,12 +3,16 @@
 {
 	"name": "Ruby",
 	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
+	"service": "rails-app",
 	"workspaceFolder": "/workspace",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+
+	"containerEnv": {
+		"CAPYBARA_SERVER_PORT": "45678"
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
