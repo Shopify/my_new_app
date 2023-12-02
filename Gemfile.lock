@@ -144,6 +144,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    language_server-protocol (3.17.0.3)
     loofah (2.21.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -170,6 +171,7 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.4-aarch64-linux)
       racc (~> 1.4)
+    prism (0.17.1)
     psych (5.1.0)
       stringio
     public_suffix (5.0.3)
@@ -198,12 +200,21 @@ GEM
     reline (0.3.8)
       io-console (~> 0.5)
     rexml (3.2.6)
+    ruby-lsp (0.12.5)
+      language_server-protocol (~> 3.17.0)
+      prism (>= 0.17.1, < 0.18)
+      sorbet-runtime (>= 0.5.5685)
+    ruby-lsp-rails (0.2.7)
+      rails (>= 6.0)
+      ruby-lsp (>= 0.12.0, < 0.13.0)
+      sorbet-runtime (>= 0.5.9897)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.12.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sorbet-runtime (0.5.11144)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -249,6 +260,7 @@ DEPENDENCIES
   jbuilder
   puma (>= 5.0)
   rails!
+  ruby-lsp-rails
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
@@ -256,9 +268,6 @@ DEPENDENCIES
   turbo-rails
   tzinfo-data
   web-console
-
-RUBY VERSION
-   ruby 3.2.2p53
 
 BUNDLED WITH
    2.4.10
