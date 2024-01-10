@@ -222,12 +222,12 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.6-aarch64-linux)
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
     stringio (3.0.8)
     thor (1.2.2)
     timeout (0.4.0)
+    trilogy (2.6.1)
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
@@ -263,8 +263,8 @@ DEPENDENCIES
   ruby-lsp-rails
   selenium-webdriver
   sprockets-rails
-  sqlite3 (~> 1.4)
   stimulus-rails
+  trilogy (~> 2.4)
   turbo-rails
   tzinfo-data
   web-console
