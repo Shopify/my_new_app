@@ -22,6 +22,15 @@ services:
       - 45678:45678
     depends_on:
       - selenium
+      - mysql
+
+  mysql:
+    image: mysql/mysql-server:8.0
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+      MYSQL_ROOT_HOST: "%"
+    networks:
+      - default
 
   selenium:
     image: seleniarm/standalone-chromium
