@@ -12,7 +12,8 @@
 	},
 
 	"containerEnv": {
-		"CAPYBARA_SERVER_PORT": "45678"
+		"CAPYBARA_SERVER_PORT": "45678",
+		"RAILS_DATABASE_HOST": "postgres",
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
