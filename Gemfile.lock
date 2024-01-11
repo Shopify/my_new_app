@@ -177,6 +177,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.15.4-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.15.4-x86_64-linux)
+      racc (~> 1.4)
     prism (0.17.1)
     psych (5.1.0)
       stringio
@@ -202,7 +204,8 @@ GEM
     rake (13.0.6)
     rdoc (6.5.0)
       psych (>= 4.0.0)
-    redis (5.0.7)
+    redis (5.0.8)
+      redis-client (>= 0.17.0)
     redis-client (0.19.1)
       connection_pool
     regexp_parser (2.8.1)
@@ -236,10 +239,11 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.6)
+    sqlite3 (1.7.0)
       mini_portile2 (~> 2.8.0)
-    sqlite3 (1.6.6-aarch64-linux)
-    sqlite3 (1.6.6-arm64-darwin)
+    sqlite3 (1.7.0-aarch64-linux)
+    sqlite3 (1.7.0-arm64-darwin)
+    sqlite3 (1.7.0-x86_64-linux)
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
     stringio (3.0.8)
@@ -268,6 +272,8 @@ GEM
 PLATFORMS
   aarch64-linux
   arm64-darwin-22
+  ruby
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
