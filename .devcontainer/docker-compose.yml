@@ -22,6 +22,14 @@ services:
       - 45678:45678
     depends_on:
       - selenium
+      - mariadb
+
+  mariadb:
+    image: mariadb:10.5
+    networks:
+      - default
+    environment:
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: true
 
   selenium:
     image: seleniarm/standalone-chromium
