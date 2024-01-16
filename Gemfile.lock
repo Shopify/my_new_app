@@ -171,6 +171,8 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.4-aarch64-linux)
       racc (~> 1.4)
+    nokogiri (1.15.4-arm64-darwin)
+      racc (~> 1.4)
     prism (0.17.1)
     psych (5.1.0)
       stringio
@@ -196,6 +198,8 @@ GEM
     rake (13.0.6)
     rdoc (6.5.0)
       psych (>= 4.0.0)
+    redis-client (0.19.1)
+      connection_pool
     regexp_parser (2.8.1)
     reline (0.3.8)
       io-console (~> 0.5)
@@ -214,6 +218,11 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sidekiq (7.2.0)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.14.0)
     sorbet-runtime (0.5.11144)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
@@ -223,6 +232,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.6.6-aarch64-linux)
+    sqlite3 (1.6.6-arm64-darwin)
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
     stringio (3.0.8)
@@ -250,6 +260,7 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  arm64-darwin-22
 
 DEPENDENCIES
   bootsnap
@@ -262,6 +273,7 @@ DEPENDENCIES
   rails!
   ruby-lsp-rails
   selenium-webdriver
+  sidekiq
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
