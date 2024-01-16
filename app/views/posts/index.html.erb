@@ -2,6 +2,7 @@
 
 <h1>Posts</h1>
 
+<%= turbo_stream_from "posts" %>
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render post %>
