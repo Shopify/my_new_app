@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/ruby:1-3-bookworm
+FROM mcr.microsoft.com/devcontainers/ruby:1-3.2-bookworm
 
 # Install packages needed to build gems
 RUN apt-get update -qq && \
