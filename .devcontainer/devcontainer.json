@@ -13,6 +13,7 @@
 
 	"containerEnv": {
 		"CAPYBARA_SERVER_PORT": "45678",
+		"RAILS_DATABASE_HOST": "mysql",
 		"JOBS_REDIS_URL": "redis://redis:6379/1",
 		"CABLE_REDIS_URL": "redis://redis:6379/1"
 	},
