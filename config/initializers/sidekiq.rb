@@ -1,4 +1,4 @@
-redis_url = ENV.fetch("JOBS_REDIS_URL", "redis://localhost:6379/1")
+redis_url = ENV.fetch("REDIS_URL", "redis://localhost:6379/1")
 
 Sidekiq.configure_server do |config|
   config.redis = { url: redis_url }

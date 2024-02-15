@@ -22,15 +22,23 @@ services:
       - 45678:45678
     depends_on:
       - selenium
+      - redis
 
   selenium:
     image: seleniarm/standalone-chromium
+    restart: unless-stopped
     networks:
       - default
 
   redis:
     image: redis:7.2
+    restart: unless-stopped
     networks:
       - default
-    ports:
-      - 6379:6379
+    volumes:
+      - redis-data:/data
+
+
+
+volumes:
+  redis-data:
